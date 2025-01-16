@@ -1,3 +1,8 @@
+
+----PRIMERO CARGAR EL DATA SET REQUERIDO----
+El dataset que uso esta con el nombre :--
+
+
 1.-Para que funcione correctamente con la parte del ML prediction debe tener el codigo en una VM o en COLAB.
 
 LINK DE COLAB:https://colab.research.google.com/drive/1-9c3CO05Cn1gIZrpfXIL8b8fpkgamfz7
