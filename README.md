@@ -1,6 +1,6 @@
 
 ----PRIMERO CARGAR EL DATA SET REQUERIDO----
-El dataset que uso esta con el nombre :--
+El dataset que uso esta con el nombre : " heart.csv "
 
 
 1.-Para que funcione correctamente con la parte del ML prediction debe tener el codigo en una VM o en COLAB.
