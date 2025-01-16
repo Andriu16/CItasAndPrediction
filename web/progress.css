@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  .progress-container {
+    position: relative;
+    width: 90%;
+    margin: 50px auto;
+  }
+
+  /* Fondo de la barra con líneas divisorias */
+  .progress-bar-background {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .progress-bar-background div {
+    height: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+
+  .progress-bar-background div:last-child {
+    border-right: none;
+  }
+
+  /* Barra de progreso */
+  .progress {
+    position: absolute;
+    width: 20%; /* Cambia este valor para ajustar el porcentaje */
+    height: 100%;
+    background-color: #ff9149; /* Color ajustado */
+    border-radius: 20px;
+    z-index: 2;
+  }
+
+  /* Círculo indicador */
+  .progress-indicator {
+    position: absolute;
+    right: -15px; /* Ajusta para centrar el círculo al final */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #ff9149;
+    border: 3px solid white; /* Borde blanco */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    z-index: 3;
+  }
+
+  /* Marcadores */
+  .markers {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .marker {
+    text-align: center;
+    position: relative;
+    font-size: 12px;
+  }
+
+  .marker .dot {
+    width: 6px;
+    height: 6px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 5px auto;
+  }
+
+  /* Etiquetas de los pasos */
+  .steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  
+  /* Etiquetas de los pasos (ajustadas para reflejar el rango 126-564) */
+
+
+.steps .step-label {
+    position: absolute;
+    top: -25px;
+    font-size: 14px;
+    color: gray;
+}
+
+.step-start {
+    left: 0;
+    content: "126";
+}
+
+.step-end {
+    right: 0;
+    content: "564";
+}
+
+  

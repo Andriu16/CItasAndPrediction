@@ -1,0 +1,66 @@
+/* Diseño general */
+/*body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2e2e38;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+/* Contenedor del gráfico de barras */
+.progress-container {
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Contenedor para los velocímetros */
+.speedometers-container {
+    position: fixed;
+    bottom: -40px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.speedometer-row {
+    display: flex;
+    gap: 200px;
+}
+
+.speedometer.medium {
+    width: 280px;
+    height: 280px;
+}
+
+.speedometer.small {
+    width: 250px;
+    height: 250px;
+}
+
+/* Contenedor para el termómetro */
+.thermometer-container {
+    position: fixed;
+    bottom: 130px;
+    right: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+

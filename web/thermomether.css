@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css?family=Jaldi&display=swap');
+
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  background: #3d3d44;
+  font-family: 'Jaldi', sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+#wrapper {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#termometer {
+  width: 70px;
+  background: #3b3b3b;
+  height: 240px;
+  position: relative;
+  border: 9px solid #313135;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+#termometer:before,
+#termometer:after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+}
+
+#termometer:before {
+  width: 100%;
+  height: calc(50px / 2 + 9px);
+  bottom: 9px;
+  background: #3b3b3b;
+}
+
+#termometer:after {
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  background-color: #3dcadf;
+  bottom: -50px;
+  border: 9px solid #313135;
+  left: 50%;
+}
+
+#graduations {
+  height: 50%;
+  top: 10%;
+  width: 50%;
+  position: absolute;
+  border-top: 3px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+#temperature {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 20px;
+  transform-origin: bottom;
+  transition: height 0.2s ease-in-out, background 0.2s ease-in-out; /* Suaviza el cambio de degradado */
+}
+
+
+#temperature:before {
+  content: attr(data-value);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  position: absolute;
+  z-index: 2;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-size: 1em;
+  transform: translateY(50%);
+  left: 110%;
+  top: -10%;
+}
+
+#playground {
+  display: none;
+}
+
+#range {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#range-info {
+    font-size: 1.2em;
+    color: #3dcadf;
+    margin-top: 10px;
+}
+
+input[type="range"] {
+  width: 200px;
+  margin: 0 10px;
+}
+
+input[type="text"] {
+  width: 3em;
+  text-align: center;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  margin: 0 5px;
+  padding: 0px 5px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="text"]:focus {
+  border-color: #3dcadf;
+  outline: none;
+}
+
+
+
+
